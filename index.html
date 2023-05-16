@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="stylesheet" href="style.css">
+    <title>
+        Get value of selected
+        radio button
+    </title>
+</head>
+  
+<body>
+    <h3 id="title" >
+        Select a player, spell and click on Submit.
+    </h3>
+      
+    <h3 id="title">Player:</h3>
+  <div id=playerlist>
+    <input id ="player" type="radio" name="player" value="strength">Django
+    <input id ="player"  type="radio" name="player" value="power">Milo
+    <input id ="player"  type="radio" name="player" value="strength">Chip
+  <input id ="player"  type="radio" name="player" value="strength">Annie
+  <input id ="player"  type="radio" name="player" value="chaos">Jacob H
+  <input id ="player"  type="radio" name="player" value="chaos">Crystal
+  <input id ="player"  type="radio" name="player" value="chaos">Teakilla
+  <input id ="player"  type="radio" name="player" value="kho">Ali
+  <input id ="player"  type="radio" name="player" value="kho">Oka
+  <input id ="player"  type="radio" name="player" value="power">Jacob G
+  <input id ="player"  type="radio" name="player" value="power">Theo
+  <input id ="player"  type="radio" name="player" value="anarchy">Clam
+    <input id ="player"  type="radio" name="player" value="anarchy">Chaz
+    <input id ="player"  type="radio" name="player" value="anarchy">Olu
+    <input id ="player"  type="radio" name="player" value="anarchy">Eddie
+  </div>
+    <br>
+  <h3 id="title">Spell:</h3>
+  <div id="spelllist">
+  <input id ="spell"  type="radio" name="spell" value="power">100 Tiers of War
+    <input id ="spell" type="radio" name="spell" value="kho">Assumption of Tranquility
+    <input id ="spell" type="radio" name="spell" value="meng">Asymetrical Retribution
+      <input id ="spell" type="radio" name="spell" value="meng">Bicubic Downsampler
+        <input id ="spell" type="radio" name="spell" value="meng">Bionic AK-57
+      <input id ="spell" type="radio" name="spell" value="kho">Bomax Collector Box
+    <input id ="spell"  type="radio" name="spell" value="power">Critch Yudling
+        <input id ="spell" type="radio" name="spell" value="meng">Dead Man's Hand
+        <input id ="spell" type="radio" name="spell" value="kho">Debunk Game Theory
+          <input id ="spell" type="radio" name="spell" value="strength">Disengineer Civilian
+          <input id ="spell" type="radio" name="spell" value="power">E priori
+          <input id ="spell" type="radio" name="spell" value="power">Electro-shock Therapy
+          <input id ="spell" type="radio" name="spell" value="chaos">Fingu's Cantrip
+            <input id ="spell" type="radio" name="spell" value="kho">Food Party
+              <input id ="spell" type="radio" name="spell" value="strength">Gazbik Wigspozon
+                <input id ="spell" type="radio" name="spell" value="anarchy">Gruffle Hand
+                  <input id ="spell" type="radio" name="spell" value="anarchy">Havoc Fallacy
+                    <input id ="spell" type="radio" name="spell" value="power">I see your soul and raise you two
+  <input id ="spell" type="radio" name="spell" value="kho">Inverted Dawn
+    <input id ="spell" type="radio" name="spell" value="anarchy">Isoceles Nonagon
+      <input id ="spell" type="radio" name="spell" value="strength">Moment of Deflection
+      <input id ="spell" type="radio" name="spell" value="strength">Mouthless Gift Horse
+      <input id ="spell" type="radio" name="spell" value="anarchy">Neverternal Orpheus
+      <input id ="spell" type="radio" name="spell" value="power">Ocean of Incarceration
+      <input id ="spell" type="radio" name="spell" value="kho">Pause time
+      <input id ="spell" type="radio" name="spell" value="kho">Post-life crisis
+      <input id ="spell" type="radio" name="spell" value="chaos">Re-subvert disprobability
+      <input id ="spell" type="radio" name="spell" value="chaos">Shill Agent of Chaos
+      <input id ="spell" type="radio" name="spell" value="anarchy">Sholem druid bubble blower
+      <input id ="spell" type="radio" name="spell" value="strength">Skin Shield
+      <input id ="spell" type="radio" name="spell" value="strength">Sky Urchin respawn point
+      <input id ="spell" type="radio" name="spell" value="meng">Spherical Blade
+      <input id ="spell" type="radio" name="spell" value="anarchy">Stitch Statch Stoe
+      <input id ="spell" type="radio" name="spell" value="power">Tag Team Trundo
+        <input id ="spell" type="radio" name="spell" value="anarchy">Unabandonned Bandwidth Mine
+        <input id ="spell" type="radio" name="spell" value="anarchy">Unfathomable Prayer
+          <input id ="spell" type="radio" name="spell" value="chaos">When Knowledge Twas Power
+          <input id ="spell" type="radio" name="spell" value="chaos">Zodiac Cataclysm
+  </div>
+    <h3 id="result3"></h3>
+    <button id="submit" type="button" onclick="displayRadioValue();checkTypes();markAsDone()">
+        Submit
+    </button>
+      
+    <br>
+      
+    <div id="result"></div>
+     <div id="result2"></div>
+  <script src="script.js"></script>
+
+</body>
+</html>  
