@@ -22,10 +22,8 @@ for(i = 0; i < spelltype.length; i++) {
 function checkTypes(){
 //Defining variables
 const spelltype = document.querySelector('input[name="spell"]:checked').value;
-// const playertype = document.querySelector('input[name="player"]:checked').value;
+const playertype = document.querySelector('input[name="player"]:checked').value;
 
-const playertype = document.querySelector('#player2').value;
-console.log(document.querySelector('#player2').value)
 //Defining strength combinations
 if (spelltype == "chaos" && playertype == "strength" && Math.random() > 0.5) {
 document.getElementById("result3").innerHTML = "Passed";}
