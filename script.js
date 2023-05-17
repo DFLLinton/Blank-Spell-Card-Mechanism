@@ -1,7 +1,7 @@
 function getOption() {
    selectElement = document.querySelector('#select1');
    output = selectElement.value;
-   document.querySelector('#result').textContent = output;
+   document.querySelector('#result').textContent = "Player Type: "+output;
    console.log(output);
 }
 
@@ -119,8 +119,7 @@ console.log(selected);
 const output = document.getElementById("result3").textContent;
 console.log(output);
 if (output == "Passed"){
-selected.value="Already played in this match";
-console.log('I am changing criterion');
+selected.value="Already played";
 } else {
 // do nothing
 }

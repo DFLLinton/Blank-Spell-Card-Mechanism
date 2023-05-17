@@ -61,4 +61,5 @@ display: block;
     z-index: 1000;
     padding: 20px;
     display:none;
+    border-radius: 25px;
   }
