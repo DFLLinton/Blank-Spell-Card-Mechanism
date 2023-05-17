@@ -1,3 +1,10 @@
+function getOption() {
+   selectElement = document.querySelector('#select1');
+   output = selectElement.value;
+   document.querySelector('.output').textContent = output;
+   console.log(output);
+}
+
 function displayRadioValue() {
     var playertype = document.getElementsByName('player');
 
@@ -22,7 +29,8 @@ for(i = 0; i < spelltype.length; i++) {
 function checkTypes(){
 //Defining variables
 const spelltype = document.querySelector('input[name="spell"]:checked').value;
-const playertype = document.querySelector('input[name="player"]:checked').value;
+// const playertype = document.querySelector('input[name="player"]:checked').value;
+const playertype = output;
 
 //Defining strength combinations
 if (spelltype == "chaos" && playertype == "strength" && Math.random() > 0.5) {

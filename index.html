@@ -29,6 +29,20 @@
     <input id ="player"  type="radio" name="player" value="anarchy">Olu
     <input id ="player"  type="radio" name="player" value="anarchy">Eddie
   </div>
+
+  <select id="select1">
+    <option value="strength">Django</option>
+    <option value="power">Milo</option>
+    <option value="idk">Chip</option>
+    <option value="strength">Annie</option>
+</select>
+<p> The value of the option selected is:
+  <span class="output"></span>
+</p>
+
+
+<button onclick="getOption()"> Check option </button>
+
     <br>
   <h3 id="title">Spell:</h3>
   <div id="spelllist">
@@ -72,7 +86,7 @@
           <input id ="spell" type="radio" name="spell" value="chaos">Zodiac Cataclysm
   </div>
     <h3 id="result3"></h3>
-    <button id="submit" type="button" onclick="displayRadioValue();checkTypes();markAsDone()">
+    <button id="submit" type="button" onclick="getOption();displayRadioValue();checkTypes();markAsDone()">
         Submit
     </button>
       
