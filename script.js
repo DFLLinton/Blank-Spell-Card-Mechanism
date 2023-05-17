@@ -127,5 +127,5 @@ console.log('I am changing criterion');
 }
 function showResult(){
    document.getElementById('outputoverlay').style.display = "block";
-   setInterval(function(){document.getElementById('outputoverlay').style.display = "none"},5000);
+   setTimeout(function(){document.getElementById('outputoverlay').style.display = "none"},5000);
 }
