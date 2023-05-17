@@ -48,3 +48,13 @@ font-size: 1em;
 display: block;
     margin: 0 auto;
   }
+  #outputoverlay{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color: white; background: black;
+    z-index: 1000;
+    padding: 20px;
+    display:none;
+  }

@@ -62,15 +62,15 @@
           <input id ="spell" type="radio" name="spell" value="chaos">When Knowledge Twas Power
           <input id ="spell" type="radio" name="spell" value="chaos">Zodiac Cataclysm
   </div>
-    <h3 id="result3"></h3>
-    <button id="submit" type="button" onclick="getOption();displayRadioValue();checkTypes();markAsDone()">
+    <button id="submit" type="button" onclick="showResult();getOption();displayRadioValue();checkTypes();markAsDone()">
         Submit
     </button>
-      
-    <br>
-      
-    <div id="result"></div>
-     <div id="result2"></div>
+      <div id="outputoverlay">
+        <h3 id="result3"></h3>
+        <div id="result"></div>
+        <div id="result2"></div>  
+      </div>      
+   
   <script src="script.js"></script>
 
 </body>

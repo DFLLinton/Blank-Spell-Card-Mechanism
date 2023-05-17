@@ -29,7 +29,6 @@ for(i = 0; i < spelltype.length; i++) {
 function checkTypes(){
 //Defining variables
 const spelltype = document.querySelector('input[name="spell"]:checked').value;
-// const playertype = document.querySelector('input[name="player"]:checked').value;
 const playertype = output;
 
 //Defining strength combinations
@@ -125,4 +124,8 @@ console.log('I am changing criterion');
 } else {
 // do nothing
 }
+}
+function showResult(){
+   document.getElementById('outputoverlay').style.display = "block";
+   setInterval(function(){document.getElementById('outputoverlay').style.display = "none"},5000);
 }
