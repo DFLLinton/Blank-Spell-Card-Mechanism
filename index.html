@@ -75,7 +75,17 @@
           <input id ="spell" type="radio" name="spell" value="chaos">When Knowledge Twas Power
           <input id ="spell" type="radio" name="spell" value="chaos">Zodiac Cataclysm
   </div>
-    <button id="submit" type="button" onclick="showResult();getOption();displayRadioValue();checkTypes();markAsDone()">
+
+  <input list="newBrwosers" id="newBrwoser" name="newBrwoser" class="form-control">
+<datalist  id="newBrwosers">
+<option value="Internet Explorer" data-value="1">
+<option value="Firefox" data-value="chaos">
+<option value="Chrome" data-value="3">
+<option value="Opera" data-value="4">
+<option value="Safari" data-value="5">
+</datalist>
+
+    <button id="submit" type="button" onclick="showResult();getOption();checkTypes()">
         Submit
     </button>
       <div id="outputoverlay">
@@ -84,15 +94,6 @@
         <div id="result2"></div>  
       </div>     
       
-        <input list="browsers" name="myBrowser" />
-        <datalist id="browsers">
-          <option value="Chrome">
-          <option value="Firefox">
-          <option value="Internet Explorer">
-          <option value="Opera">
-          <option value="Safari">
-          <option value="Microsoft Edge">
-        </datalist>
    
   <script src="script.js"></script>
 

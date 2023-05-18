@@ -3,32 +3,17 @@ function getOption() {
    output = selectElement.value;
    document.querySelector('#result').textContent = "Player Type: "+output;
    console.log(output);
+    newBrwoser= document.getElementById("newBrwoser").value;
+    newBrwoser_val= document.querySelector("#newBrwosers"  + " option[value='" + newBrwoser+ "']").dataset.value;
+  console.log(newBrwoser_val)
+  document.querySelector('#result2').textContent = "Spell Type: "+newBrwoser_val;
 }
 
-function displayRadioValue() {
-    var playertype = document.getElementsByName('player');
 
-var spelltype = document.getElementsByName('spell');
-
-      
-    for(i = 0; i < playertype.length; i++) {
-        if(playertype[i].checked)
-        document.getElementById("result").innerHTML
-                = "Player Type: "+ playertype[i].value;
-    }
-
-
-for(i = 0; i < spelltype.length; i++) {
-        if(spelltype[i].checked)
-        document.getElementById("result2").innerHTML
-                = "Spell Type: "+ spelltype[i].value;
-    }
-
-
-}
 function checkTypes(){
 //Defining variables
-const spelltype = document.querySelector('input[name="spell"]:checked').value;
+// const spelltype = document.querySelector('input[name="spell"]:checked').value;
+const spelltype = newBrwoser_val;
 const playertype = output;
 
 //Defining strength combinations
@@ -113,17 +98,17 @@ document.getElementById("result3").innerHTML = "Failed";
 
 }
 //Mark as done
-function markAsDone(){
-const selected = document.querySelector('input[name="spell"]:checked');
-console.log(selected);
-const output = document.getElementById("result3").textContent;
-console.log(output);
-if (output == "Passed"){
-selected.value="Already played";
-} else {
-// do nothing
-}
-}
+// function markAsDone(){
+// const selected = document.querySelector('input[name="spell"]:checked');
+// console.log(selected);
+// const output = document.getElementById("result3").textContent;
+// console.log(output);
+// if (output == "Passed"){
+// selected.value="Already played";
+// } else {
+// // do nothing
+// }
+// }
 function showResult(){
    document.getElementById('outputoverlay').style.display = "block";
    setTimeout(function(){document.getElementById('outputoverlay').style.display = "none"},5000);
