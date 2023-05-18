@@ -1,3 +1,4 @@
+// Retrieves data from inputs
 function getOption() {
    selectElement = document.querySelector('#select1');
    output = selectElement.value;
@@ -9,10 +10,8 @@ function getOption() {
   document.querySelector('#result2').textContent = "Spell Type: "+newBrwoser_val;
 }
 
-
+// defines two key variables
 function checkTypes(){
-//Defining variables
-// const spelltype = document.querySelector('input[name="spell"]:checked').value;
 const spelltype = newBrwoser_val;
 const playertype = output;
 
@@ -97,18 +96,7 @@ document.getElementById("result3").innerHTML = "Failed";
 }
 
 }
-//Mark as done
-// function markAsDone(){
-// const selected = document.querySelector('input[name="spell"]:checked');
-// console.log(selected);
-// const output = document.getElementById("result3").textContent;
-// console.log(output);
-// if (output == "Passed"){
-// selected.value="Already played";
-// } else {
-// // do nothing
-// }
-// }
+// shows result on pop up
 function showResult(){
    document.getElementById('outputoverlay').style.display = "block";
    setTimeout(function(){document.getElementById('outputoverlay').style.display = "none"},5000);

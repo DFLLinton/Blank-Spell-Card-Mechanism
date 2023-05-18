@@ -4,15 +4,14 @@
 <head>
   <link rel="stylesheet" href="style.css">
     <title>
-        Get value of selected
-        radio button
+        Bomax Spell Caster
     </title>
 </head>
   
 <body>
       
     <h3 id="title">Player:</h3>
-
+<!-- player list -->
   <select id="select1">
     <option value="strength">Django</option>
     <option value="power">Milo</option>
@@ -35,7 +34,7 @@
 
     <br>
   <h3 id="title">Spell:</h3>
-
+<!-- spell list -->
   <input list="newBrwosers" id="newBrwoser" name="newBrwoser" class="form-control">
 <datalist  id="newBrwosers">
 <option value="100 Tiers of War" data-value="power">
@@ -77,10 +76,11 @@
 <option value="When Knowledge Twas Power" data-value="chaos">
 <option value="Zodiac Cataclysm" data-value="chaos">
 </datalist>
-
+<!-- submit button -->
     <button id="submit" type="button" onclick="showResult();getOption();checkTypes()">
         Submit
     </button>
+    <!-- result overlay -->
       <div id="outputoverlay">
         <h3 id="result3"></h3>
         <div id="result"></div>
