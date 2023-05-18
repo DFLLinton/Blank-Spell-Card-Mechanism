@@ -63,3 +63,12 @@ display: block;
     display:none;
     border-radius: 25px;
   }
+#newBrwoser{
+  width: 400px;
+height: 100px;
+font-size: 1em;
+display: block;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 25px;
+}
