@@ -9,7 +9,10 @@
 </head>
   
 <body>
-      
+  <video autoplay muted loop id="myVideo">
+    <source src="flames.mp4" type="video/mp4">
+  </video>
+      <div id="calculator">
     <h3 id="title">Player:</h3>
 <!-- player list -->
   <select id="select1">
@@ -81,6 +84,7 @@
     <button id="submit" type="button" onclick="showResult();getOption();checkTypes()">
         Submit
     </button>
+    </div>
     <!-- result overlay -->
       <div id="outputoverlay">
         <h3 id="result3"></h3>
