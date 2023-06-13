@@ -3,6 +3,111 @@
   
 <head>
   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://i.ibb.co/852XnXC/Icon.png" />
+<meta name="apple-mobile-web-app-title" content="Cooli">
+<link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/852XnXC/Icon.png" />
+<link rel="mask-icon" type="" href="https://i.ibb.co/852XnXC/Icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+* {
+  font-family: "Comfortaa", cursive;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.outcome {
+  margin-top: 100px;
+  height: 200px;
+  width: 200px;
+  background: #555;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  border-style: dotted;
+  border-color: #1c1c1c;
+  border-width: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotateY(0deg) rotateX(0deg);
+  transition: 1s;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  line-height: 0.8;
+  color: white;
+  box-shadow: 0 0 30px black;
+}
+.outcome.flip {
+  transition: 1s;
+  transform: rotateY(720deg) rotateX(720deg);
+}
+.outcome.toss {
+  -webkit-animation: toss 0.7s forwards ease-in-out;
+          animation: toss 0.7s forwards ease-in-out;
+}
+.outcome:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 185px;
+  width: 185px;
+  display: block;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+.outcome:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 190px;
+  width: 190px;
+  display: block;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+@-webkit-keyframes toss {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -150px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes toss {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -150px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+</style>
     <title>
         Bomax Spell Caster
     </title>
@@ -81,7 +186,7 @@
 <option value="Zodiac Cataclysm" data-value="chaos">
 </datalist>
 <!-- submit button -->
-    <button id="submit" type="button" onclick="showResult();getOption();checkTypes()">
+    <button id="submit" type="button" onclick="getOption();checkTypes()">
         Submit
     </button>
     </div>
@@ -91,7 +196,11 @@
         <div id="result"></div>
         <div id="result2"></div>  
       </div>     
+
+      <body translate="no" >
+        <div class="outcome">
       
+      </div>      
    
   <script src="script.js"></script>
 
